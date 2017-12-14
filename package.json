@@ -4,6 +4,7 @@
   "description": "Code for the test class for be tech",
   "main": "index.js",
   "scripts": {
+    "start" : "node index",
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {

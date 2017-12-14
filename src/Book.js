@@ -1,3 +1,5 @@
+'use strict';
+
 // Implement here your Book logic
 var Text = require('./Text');
 function Book(title, year, authors_array, publisher){
@@ -16,10 +18,10 @@ Book.prototype = Object.create(Text.prototype);    // Vea las siguientes notas
 Book.prototype.constructor = Book;
 
 Book.prototype.technical_sheet = function () {
-    return "Title: "     + this.title + "/n" +
-        "Year: "      + this.year + "/n" +
-        "Aurhors: "   + this.f_authors() + "/n" +
-        "Publisher: " + this.publisher + "/n";
+    return 'Title: '     + this.title + '\n' +
+        'Year: '      + this.year + '\n' +
+        'Aurhors: '   + this.f_authors() + '\n' +
+        'Publisher: ' + this.publisher + '\n';
 };
 
 module.exports = Book;
