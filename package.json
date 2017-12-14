@@ -1,0 +1,29 @@
+{
+  "name": "test_class_bt",
+  "version": "1.0.0",
+  "description": "Code for the test class for be tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vavimayor159/test_class_bt.git"
+  },
+  "keywords": [
+    "Class",
+    "Test",
+    "Be",
+    "Tech"
+  ],
+  "author": "Ivan Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vavimayor159/test_class_bt/issues"
+  },
+  "homepage": "https://github.com/vavimayor159/test_class_bt#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}

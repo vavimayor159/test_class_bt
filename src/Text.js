@@ -9,4 +9,10 @@ Text.prototype.f_authors = function () {
     return this.authors_array.join(', ');
 };
 
+Text.prototype.technical_sheet = function () {
+    return "Title: "   + this.title + "/n" +
+    "Year: "    + this.year + "/n" +
+    "Aurhors: " + this.f_authors() + "/n";
+};
+
 module.exports = Text;

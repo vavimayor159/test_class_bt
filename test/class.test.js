@@ -1,7 +1,7 @@
 var expect         = require("chai").expect;
 var Book           = require("../src/Book");
 var Text           = require("../src/Text");
-var Magazine       = require("../src/Magazine");
+var Paper          = require("../src/Paper");
 
 var book_title     = "Design Patterns: Elements of Reusable Object-Oriented Software";
 var book_year      = 1994;
@@ -33,7 +33,7 @@ describe("Library for the class", function () {
 
     describe("Book class", function () {
        it("Create a new Book object and show title", function () {
-           var book = new Book(book_title);
+           var book = new Book(book_title, book_year, book_authors, book_publisher);
            expect(book.title).to.equal(book_title);
        });
 
@@ -41,5 +41,17 @@ describe("Library for the class", function () {
            var book = new Book();
            expect(book instanceof Text).to.equal(true)
        });
+    });
+
+    describe("Paper class", function () {
+        it("Create a new Paper object and show title", function () {
+            var paper = new Paper(paper_title);
+            expect(paper.title).to.equal(paper_title, paper_year, paper_authors, paper_journal);
+        });
+
+        it("Create a new Text object who actually is a Paper object", function () {
+            var paper = new Paper();
+            expect(paper instanceof Text).to.equal(true)
+        });
     });
 });
